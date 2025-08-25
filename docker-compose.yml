@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  media-coverage-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: media-coverage-tracker-ui
+    ports:
+      - "3000:80"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    networks:
+      - media-coverage-network
+
+networks:
+  media-coverage-network:
+    driver: bridge
