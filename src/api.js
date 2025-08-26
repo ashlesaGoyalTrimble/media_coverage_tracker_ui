@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://127.0.0.1:8002/api/v1/media";
+const API_BASE_URL = "https://mtb.trimblecentraldev.com/api/v1/media";
+// const API_BASE_URL = "http://127.0.0.1:8002/api/v1/media";
 
 // export const processHyperlinks = async (fileName, sheetName) => {
 //   try {
